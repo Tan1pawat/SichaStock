@@ -1,5 +1,5 @@
 <!-- Bar search -->
-<ng-container *ngIf="appearance === 'bar'">
+<!-- <ng-container *ngIf="appearance === 'bar'">
     <button
         mat-icon-button
         *ngIf="!opened"
@@ -40,15 +40,12 @@
                         class="group relative mb-1 py-0 px-6 text-md rounded-md hover:bg-gray-100 dark:hover:bg-hover"
                         [routerLink]="result.link"
                         [value]="result.value">
-                        <!-- Contacts -->
                         <ng-container *ngIf="resultSet.id === 'contacts'">
                             <ng-container *ngTemplateOutlet="contactResult; context: {$implicit: result}"></ng-container>
                         </ng-container>
-                        <!-- Pages -->
                         <ng-container *ngIf="resultSet.id === 'pages'">
                             <ng-container *ngTemplateOutlet="pageResult; context: {$implicit: result}"></ng-container>
                         </ng-container>
-                        <!-- Tasks -->
                         <ng-container *ngIf="resultSet.id === 'tasks'">
                             <ng-container *ngTemplateOutlet="taskResult; context: {$implicit: result}"></ng-container>
                         </ng-container>
@@ -63,7 +60,7 @@
             <mat-icon [svgIcon]="'heroicons_outline:x-mark'"></mat-icon>
         </button>
     </div>
-</ng-container>
+</ng-container> -->
 
 <!-- Basic search -->
 <ng-container *ngIf="appearance === 'basic'">

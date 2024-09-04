@@ -1,7 +1,7 @@
 <div
     class="settings-cog fixed flex items-center justify-center right-0 w-10 h-10 shadow-lg rounded-l-lg z-90 cursor-pointer bg-red-600 bg-opacity-90 print:hidden"
     [class.lg:right-0]="config.layout === 'centered' || config.layout === 'material'"
-    [class.lg:right-16]="config.layout !== 'centered' && config.layout !== 'material'"
+    [class.lg:right-0]="config.layout !== 'centered' && config.layout !== 'material'"
     style="top: 275px"
     (click)="settingsDrawer.toggle()">
     <mat-icon
@@ -115,10 +115,9 @@
             <hr class="my-8">
 
             <!-- Layout -->
-            <div class="text-md font-semibold text-secondary">LAYOUT</div>
-            <div class="grid grid-cols-3 gap-3 mt-6">
+            <!-- <div class="text-md font-semibold text-secondary">LAYOUT</div> -->
+            <!-- <div class="grid grid-cols-3 gap-3 mt-6">
 
-                <!-- Empty -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('empty')">
@@ -134,7 +133,6 @@
                     </div>
                 </div>
 
-                <!-- Classic -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('classic')">
@@ -168,7 +166,6 @@
                     </div>
                 </div>
 
-                <!-- Classy -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('classy')">
@@ -205,7 +202,6 @@
                     </div>
                 </div>
 
-                <!-- Compact -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('compact')">
@@ -238,7 +234,6 @@
                     </div>
                 </div>
 
-                <!-- Dense -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('dense')">
@@ -271,7 +266,6 @@
                     </div>
                 </div>
 
-                <!-- Futuristic -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('futuristic')">
@@ -305,7 +299,6 @@
                     </div>
                 </div>
 
-                <!-- Thin -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('thin')">
@@ -342,7 +335,6 @@
 
                 <div class="col-span-2"></div>
 
-                <!-- Centered -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('centered')">
@@ -372,7 +364,6 @@
                     </div>
                 </div>
 
-                <!-- Enterprise -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('enterprise')">
@@ -404,7 +395,6 @@
                     </div>
                 </div>
 
-                <!-- Material -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('material')">
@@ -436,7 +426,6 @@
                     </div>
                 </div>
 
-                <!-- Modern -->
                 <div
                     class="flex flex-col cursor-pointer"
                     (click)="setLayout('modern')">
@@ -466,7 +455,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
         </div>
 
